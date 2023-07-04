@@ -1,0 +1,56 @@
+/* to create a database */
+create database University;
+
+/* to create a table */
+create table University.students(
+student_id int primary key,
+student_name varchar(50),
+student_age int,
+student_major varchar(50)
+);
+
+/* to insert the values in table*/
+insert into  University.students values
+(1,"Abishek",16,"Arts"),
+(2,"Karthi",15,"Maths_Biology"),
+(3,"dilip",21,"BBA"),
+(4,"Jana",17,"Economics"),
+(5,"Alex",18,"Computer science");
+
+select * from University.students;
+drop table University.students;
+
+/to retrieve the names of all students majoring in " BBA"/
+SELECT * FROM University.students
+WHERE student_major LIKE "C%";
+
+/to retrieve the details of the oldest student in the "Students" table/
+SELECT max(student_age) from University.st…
+/* to create database*/
+create database vnk;
+
+/* to create a table*/
+create table vnk.sp(
+sl_No int,
+name varchar(20),
+Roll_No int,
+Department varchar(20),
+College_Name varchar(20),
+Place varchar(20));
+
+/to insert the values in table/ 
+insert into vnk.sp values
+(1,"ABI",01,"B.E-BME","MEC","Rasipuram"),
+(2,"KALAI",02,"B.E-BME","MEC","Rasipuram"),
+(3,"naveen",03,"B.E-BME","MEC","Rasipuram"),
+(4,"lokesh",04,"B.E-BME","MEC","Rasipuram"),
+(5,"Nelson",05,"B.E-BME","MEC","Rasipuram"),
+(6,"Naveen",06,"B.E-BME","MEC","Rasipuram"),
+(7,"siva",07,"B.E-BME","MEC","Rasipuram"),
+(8,"kavin",08,"B.E-BME","MEC","Rasipuram"),
+(9,"nithish",09,"B.E-BME","MEC","Rasipuram"),
+(10,"arun",010,"B.E-BME","MEC","Rasipuram");
+
+/to display a table/
+select * from vnk.sp;
+drop table vnk.sp;
